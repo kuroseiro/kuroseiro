@@ -1,3 +1,6 @@
+:root{
+  --colorBoton:rgba(147, 17, 223, 1);
+}
 .letra{
   color:rgba(46, 25, 106, 0.84);
   text-align:center;
@@ -8,10 +11,12 @@
   text-align:center;
   font: normal 5em canvas;
 }
-
+html{
+  overflow: hidden;
+}
 .boton{
   font: normal 2em canvas, Geneva, sans-serif;
-  background: rgba(147, 17, 223, 1);
+  background: var(--colorBoton);
   box-shadow: rgb(87, 132, 173) 5px 5px 10px;
   width:350px;
   padding:10px;
@@ -26,7 +31,7 @@
   transform: scale(1.2);
 }
 @keyframes colores {
-  from {background-color: rgba(147, 17, 223, 1);}
+  from {background-color: var(--colorBoton)}
   to {background-color: rgb(49, 69, 168);}
 }
 h1{
