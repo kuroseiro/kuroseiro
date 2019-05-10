@@ -8,6 +8,7 @@
   text-align:center;
   font: normal 5em canvas;
 }
+
 .boton{
   font: normal 2em canvas, Geneva, sans-serif;
   background: rgba(147, 17, 223, 1);
@@ -16,6 +17,17 @@
   padding:10px;
   margin: 50px auto;
   border-radius: 10px;
+  transition: transform 1s ease-out;
+}
+.boton:hover{
+  animation-name: colores;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: scale(1.2);
+}
+@keyframes colores {
+  from {background-color: rgba(147, 17, 223, 1);}
+  to {background-color: rgb(49, 69, 168);}
 }
 h1{
   margin-bottom: 25%;
