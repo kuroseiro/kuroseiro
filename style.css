@@ -1,13 +1,13 @@
 :root{
-  --colorBoton:rgba(147, 17, 223, 1);
+  --colorBoton:rgba(4, 204, 60, 1);
 }
 .letra{
-  color:rgba(46, 25, 106, 0.84);
+  color:rgba(82, 4, 179, 0.84);
   text-align:center;
   //text-shadow: rgb(188, 81, 198) 5px 5px 10px;
 }
 .titulo{
-  color: rgb(189, 193, 228);
+  color: rgb(255, 172, 56);
   text-align:center;
   font: normal 5em canvas;
 }

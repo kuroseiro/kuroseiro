@@ -10,8 +10,8 @@ function setup() {
 }
 var esf = [];
 function draw() {
-  background(0,60);
-  stroke(77, 43, 222);
+  background(255,60);
+  stroke(color(132, 31, 255));
   strokeWeight(4);
   for (var i = 0; i < esf.length; i++) {
     var circulo = esf[i];
