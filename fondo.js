@@ -41,7 +41,7 @@ class Esferas {
     this.pos = [(random(25, width-25)),(random(25, height-25))];
     this.vel = [(1 < random(2)? -1: 1),(1 < random(2)? -1: 1)];
     this.grab = [0,(random(0.1, 0.3))];
-    this.paint = color(77, 43, 222);
+    this.paint = color(132, 31, 255);
     this.radio = 25;
   }
   anime(){
@@ -67,5 +67,11 @@ class Esferas {
       this.vel[1] *= -1;
       this.pos[1] = (this.radio/2);
     }
+  }
+}
+function windowResized() {
+  resizeCanvas(windowWidth,windowHeight);
+  for (var i = 0; i < 50; i++) {
+    esf[i] = new Esferas();
   }
 }
