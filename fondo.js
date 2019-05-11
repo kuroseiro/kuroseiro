@@ -71,7 +71,15 @@ class Esferas {
 }
 function windowResized() {
   resizeCanvas(windowWidth,windowHeight);
-  for (var i = 0; i < 50; i++) {
+  let numeroEsferas;
+  if (width > height) {
+    numeroEsferas = floor((width)/50);
+  } else {
+    numeroEsferas = floor(height/50);
+  }
+  console.log(numeroEsferas);
+  esf = [];
+  for (var i = 0; i < numeroEsferas; i++) {
     esf[i] = new Esferas();
   }
 }

@@ -32,7 +32,7 @@ html{
 }
 @keyframes colores {
   from {background-color: var(--colorBoton)}
-  to {background-color: rgb(49, 69, 168);}
+  to {background-color: rgb(158, 227, 12);}
 }
 h1{
   margin-bottom: 25%;
