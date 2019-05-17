@@ -4,7 +4,7 @@ function setup() {
   pro.parent('fondo');
   pro.position(0,0);
 	pro.style('z-index',-1);
-  for (var i = 0; i < 50; i++) {
+  for (var i = 0; i < 60; i++) {
     esf[i] = new Esferas();
   }
 }
