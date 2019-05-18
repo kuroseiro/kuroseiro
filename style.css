@@ -1,6 +1,10 @@
 :root{
   --colorBoton:rgba(4, 204, 60, 1);
 }
+.matris{
+  display: grid;
+  grid-gap: 5px;
+}
 .letra{
   color:rgba(82, 4, 179, 0.84);
   text-align:center;
