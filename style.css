@@ -1,25 +1,33 @@
 :root{
   --colorBoton:rgba(4, 204, 60, 1);
 }
-.matris{
+.container{
   display: grid;
-  grid-gap: 5px;
+  grid-template-columns: repeat(3, 350px);//auto-fit, minmax(100px, 1fr)
+  grid-template-rows: repeat(2, 4em);
+  justify-content: center;
+  grid-gap: 40px;
+  grid-row-gap: 5em;
 }
 .letra{
+  //display: flex;
   color:rgba(82, 4, 179, 0.84);
-  text-align:center;
+  text-align: center;
   font-family: 'Gugi', cursive;
   font-size: 2rem;
   //text-shadow: rgb(188, 81, 198) 5px 5px 10px;
 }
-.titulo{
+#titulo{
   color: rgb(255, 172, 56);
   text-align:center;
   font-family: 'Gugi';
   font-size: 4rem;
 }
+.header{
+  grid-column: 1 / 4;
+}
 @media only screen and (max-width:835px){
-  .titulo{
+  #titulo{
     font-size: 3rem;
   }
   .boton{
@@ -32,9 +40,7 @@ html{
 .boton{
   background: var(--colorBoton);
   box-shadow: rgb(87, 132, 173) 5px 5px 10px;
-  width:350px;
   padding:10px;
-  margin: 50px auto;
   border-radius: 10px;
   transition: transform 1s ease-out;
 }
@@ -49,7 +55,7 @@ html{
   to {background-color: rgb(158, 227, 12);}
 }
 h1{
-  margin-bottom: 25%;
+  margin-bottom: 20%;
 }
 a{
   text-decoration: none;
