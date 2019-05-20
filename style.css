@@ -1,13 +1,22 @@
 :root{
   --colorBoton:rgba(4, 204, 60, 1);
 }
+html{
+  overflow: hidden;
+}
+h1{
+  margin-bottom: 20%;
+}
+a{
+  text-decoration: none;
+}
 .container{
   display: grid;
-  grid-template-columns: repeat(3, 350px);//auto-fit, minmax(100px, 1fr)
-  grid-template-rows: repeat(2, 4em);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(1, 4em);
   justify-content: center;
-  grid-gap: 40px;
-  grid-row-gap: 5em;
+  grid-gap: 60px;
+  //grid-row-gap: 4em;
 }
 .letra{
   //display: flex;
@@ -23,9 +32,6 @@
   font-family: 'Gugi';
   font-size: 4rem;
 }
-.header{
-  grid-column: 1 / 4;
-}
 @media only screen and (max-width:835px){
   #titulo{
     font-size: 3rem;
@@ -33,9 +39,6 @@
   .boton{
     transform: scale(0.8);
   }
-}
-html{
-  overflow: hidden;
 }
 .boton{
   background: var(--colorBoton);
@@ -53,10 +56,4 @@ html{
 @keyframes colores {
   from {background-color: var(--colorBoton)}
   to {background-color: rgb(158, 227, 12);}
-}
-h1{
-  margin-bottom: 20%;
-}
-a{
-  text-decoration: none;
 }
