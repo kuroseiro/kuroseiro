@@ -4,9 +4,7 @@ function setup() {
   pro.parent('fondo');
   pro.position(0,0);
 	pro.style('z-index',-1);
-  for (var i = 0; i < 60; i++) {
-    esf[i] = new Esferas();
-  }
+  start();
 }
 var esf = [];
 function draw() {
@@ -69,17 +67,20 @@ class Esferas {
     }
   }
 }
-function windowResized() {
-  resizeCanvas(windowWidth,windowHeight);
+function start() {
   let numeroEsferas;
-  if (width > height) {
-    numeroEsferas = floor((width)/50);
-  } else {
-    numeroEsferas = floor(height/50);
+  numeroEsferas = width/60;
+  if (width < height) {
+    numeroEsferas / 2;
   }
-  console.log(numeroEsferas);
-  esf = [];
+  numeroEsferas = floor(numeroEsferas);
+  console.log("nummero de esferas: " + numeroEsferas);
   for (var i = 0; i < numeroEsferas; i++) {
     esf[i] = new Esferas();
   }
+}
+function windowResized() {
+  resizeCanvas(windowWidth,windowHeight);
+  esf = [];
+  start();
 }

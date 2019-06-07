@@ -12,13 +12,18 @@ a{
 }
 .container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
   grid-template-rows: repeat(1, 4em);
   grid-auto-rows: 4em;
   justify-content: center;
   grid-gap: 60px;
   //grid-row-gap: 4em;
 }
+/*@media only screen and (max-width:1740px) {
+  #ultimo{
+    grid-column-end: span 3;
+  }
+}*/
 .letra{
   //display: flex;
   color:rgba(82, 4, 179, 0.84);
